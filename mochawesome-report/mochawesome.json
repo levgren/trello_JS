@@ -1,0 +1,387 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 9,
+    "passes": 9,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-11-29T15:49:27.511Z",
+    "end": "2019-11-29T15:49:28.904Z",
+    "duration": 1393,
+    "testsRegistered": 9,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "738a41dc-1aa7-4544-8c1d-e0b7280166bc",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9521ac5f-e6cf-41cb-af4e-cca7465e31be",
+          "title": "API GET TESTING",
+          "fullFile": "C:\\Users\\Yevhen_Obodianskyi\\WebstormProjects\\untitled\\hw.js",
+          "file": "\\hw.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook",
+              "fullTitle": "API GET TESTING \"before all\" hook",
+              "timedOut": false,
+              "duration": 338,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "response = await call_back_api();\nbody = response.body;",
+              "err": {},
+              "uuid": "0e5906ac-c042-481e-9bfe-8b6349c8bdab",
+              "parentUUID": "9521ac5f-e6cf-41cb-af4e-cca7465e31be",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "status code is 200",
+              "fullTitle": "API GET TESTING status code is 200",
+              "timedOut": false,
+              "duration": 4,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(response.status).to.equal(200);\nconsole.log(body)",
+              "err": {},
+              "uuid": "8739d0f2-3b33-4092-8310-f38bded2a85e",
+              "parentUUID": "9521ac5f-e6cf-41cb-af4e-cca7465e31be",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should be include title",
+              "fullTitle": "API GET TESTING should be include title",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(response.body.name).to.equal('NewPerfec');\nconsole.log(response.body.name);",
+              "err": {},
+              "uuid": "5e9315c7-04b9-4314-b85c-641affb0a242",
+              "parentUUID": "9521ac5f-e6cf-41cb-af4e-cca7465e31be",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8739d0f2-3b33-4092-8310-f38bded2a85e",
+            "5e9315c7-04b9-4314-b85c-641affb0a242"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "9b025f82-857c-41e6-b665-c66568c54559",
+          "title": "API POST BOARD",
+          "fullFile": "C:\\Users\\Yevhen_Obodianskyi\\WebstormProjects\\untitled\\hw.js",
+          "file": "\\hw.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook",
+              "fullTitle": "API POST BOARD \"before all\" hook",
+              "timedOut": false,
+              "duration": 374,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "response = await call_post(requestBody);\nbody = response.body;",
+              "err": {},
+              "uuid": "9663de68-4605-44ce-9c38-f8e14c93ae47",
+              "parentUUID": "9b025f82-857c-41e6-b665-c66568c54559",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "status code is 200",
+              "fullTitle": "API POST BOARD status code is 200",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(response.status).to.equal(200);",
+              "err": {},
+              "uuid": "0cbe2578-2a98-49e8-b1d7-a0092a92994a",
+              "parentUUID": "9b025f82-857c-41e6-b665-c66568c54559",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "name and id are coorect",
+              "fullTitle": "API POST BOARD name and id are coorect",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(response.body.name).to.equal(name);\nconsole.log('name was changed to: ' + response.body.name);",
+              "err": {},
+              "uuid": "b26f97f0-8c51-40d7-ad98-5ed3a91f3558",
+              "parentUUID": "9b025f82-857c-41e6-b665-c66568c54559",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0cbe2578-2a98-49e8-b1d7-a0092a92994a",
+            "b26f97f0-8c51-40d7-ad98-5ed3a91f3558"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "d0f28193-67b0-47bb-985d-5c9d75b75d3f",
+          "title": "API POST LIST",
+          "fullFile": "C:\\Users\\Yevhen_Obodianskyi\\WebstormProjects\\untitled\\hw.js",
+          "file": "\\hw.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook",
+              "fullTitle": "API POST LIST \"before all\" hook",
+              "timedOut": false,
+              "duration": 386,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "response = await call_post_list({\n    \"name\":\"Diva Faustina\",\n    \"idBoard\":\"5ddfa99a1d78498e697a36ab\"\n});\nbody = response.body;",
+              "err": {},
+              "uuid": "31050c10-ebb4-47d9-95eb-8054449a1a87",
+              "parentUUID": "d0f28193-67b0-47bb-985d-5c9d75b75d3f",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "status code is 200",
+              "fullTitle": "API POST LIST status code is 200",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(response.status).to.equal(200);\nconsole.log(body)",
+              "err": {},
+              "uuid": "54c0aa8e-4093-46f6-af98-3f8466676929",
+              "parentUUID": "d0f28193-67b0-47bb-985d-5c9d75b75d3f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "schema is valid",
+              "fullTitle": "API POST LIST schema is valid",
+              "timedOut": false,
+              "duration": 2,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(tv4.validate(body, schema)).to.be.true;",
+              "err": {},
+              "uuid": "7e84c21a-d5b4-4ec2-a4ef-2195338dc163",
+              "parentUUID": "d0f28193-67b0-47bb-985d-5c9d75b75d3f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "name and id are coorect",
+              "fullTitle": "API POST LIST name and id are coorect",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(response.body.name).to.equal('Diva Faustina');\nconsole.log('name =' + response.body.name);\nexpect(response.body.idBoard).to.equal('5ddfa99a1d78498e697a36ab');\nconsole.log('idBoard =' + response.body.idBoard);",
+              "err": {},
+              "uuid": "b90ade23-17cc-4e6a-9ed2-17fa0ac58204",
+              "parentUUID": "d0f28193-67b0-47bb-985d-5c9d75b75d3f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "54c0aa8e-4093-46f6-af98-3f8466676929",
+            "7e84c21a-d5b4-4ec2-a4ef-2195338dc163",
+            "b90ade23-17cc-4e6a-9ed2-17fa0ac58204"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "0e884ca9-f4c9-469a-a9bc-08dd21d7f548",
+          "title": "API POST LIST",
+          "fullFile": "C:\\Users\\Yevhen_Obodianskyi\\WebstormProjects\\untitled\\hw.js",
+          "file": "\\hw.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook",
+              "fullTitle": "API POST LIST \"before all\" hook",
+              "timedOut": false,
+              "duration": 272,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "response = await call_put_list({\"name\":\"Emilianus\"});\nbody = response.body;",
+              "err": {},
+              "uuid": "df998682-0029-48fc-b2e7-275b0f0d02fa",
+              "parentUUID": "0e884ca9-f4c9-469a-a9bc-08dd21d7f548",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "status code is 200",
+              "fullTitle": "API POST LIST status code is 200",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(response.status).to.equal(200);\nconsole.log(body)",
+              "err": {},
+              "uuid": "73c909d7-4351-49f0-b62c-b98059da913e",
+              "parentUUID": "0e884ca9-f4c9-469a-a9bc-08dd21d7f548",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "name and id are coorect",
+              "fullTitle": "API POST LIST name and id are coorect",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(response.body.name).to.equal('Emilianus');\nconsole.log('name = ' + response.body.name);",
+              "err": {},
+              "uuid": "291469f9-8b6f-4203-8516-e81e55a8f202",
+              "parentUUID": "0e884ca9-f4c9-469a-a9bc-08dd21d7f548",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "73c909d7-4351-49f0-b62c-b98059da913e",
+            "291469f9-8b6f-4203-8516-e81e55a8f202"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "4.1.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {},
+      "version": "4.0.1"
+    }
+  }
+}
